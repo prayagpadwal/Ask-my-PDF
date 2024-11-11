@@ -1,55 +1,64 @@
 # Ask my PDF
 
-Welcome to "Ask my PDF", a Streamlit-powered application that transforms how you interact with PDF documents. This tool allows users to upload any PDF and engage in an interactive dialogue where they can ask questions directly about the content of the document. The app utilizes state-of-the-art Natural Language Processing (NLP) to parse and understand text, enabling it to respond with contextually relevant answers.
+"Ask my PDF" is a Streamlit application designed to enable interactive conversations with the content of PDF documents. Leveraging advanced NLP technologies, this app parses text from PDFs allowing users to ask questions and receive contextual answers instantly.
 
 ## Features
 
-- **PDF Upload**: Upload PDF documents and extract their content for querying.
-- **Interactive Chat Interface**: Ask questions about the uploaded document and receive answers as if you are chatting with an expert on the document's content.
-- **Session State Management**: Maintains the context of the conversation, allowing for a seamless interaction experience throughout the session.
+- **PDF Upload**: Users can easily upload and extract text from PDF files for analysis.
+- **Interactive Chat**: Engage with the PDF through a dynamic chat interface that understands and responds to user inquiries based on the document's content.
+- **Session State Management**: Maintains chat continuity, providing a seamless conversational experience with the document.
 
 ## Technology Stack
 
-- **Streamlit**: Manages the web interface and user interactions.
-- **Textract**: Extracts text from PDF files.
-- **Transformers (GPT-2 Tokenizer)**: Processes the extracted text to prepare it for embedding.
-- **OpenAI Embeddings**: Generates embeddings from the processed text to facilitate contextual understanding.
-- **FAISS**: Handles efficient similarity search in large databases of embeddings.
-- **OpenAI's GPT-3.5**: Provides the conversational model that generates responses based on the embedded text and user queries.
+The application integrates several advanced technologies:
 
-## Getting Started
+- **Streamlit**: For building and hosting the web interface.
+- **Textract**: Extracts text from PDFs.
+- **Transformers (GPT-2 Tokenizer)**: Facilitates text processing for NLP tasks.
+- **LangChain**: Manages NLP workflows, including embeddings and conversational chains.
+- **FAISS**: Provides efficient similarity search for handling large text databases.
+- **OpenAI API (GPT-3.5)**: Empowers the app with cutting-edge AI conversational capabilities.
+
+## Installation
 
 ### Prerequisites
 
-Before you can run "Ask my PDF", ensure you have the following installed:
-- Python 3.8+
-- pip
+You need Python 3.8 or higher installed on your machine to run "Ask my PDF". Additionally, an OpenAI API key is required to access AI models which may incur costs depending on your usage level.
 
-### Installation
+### Setting Up Your Environment
 
-Clone the repository to your local machine:
+Clone the repository and install the necessary Python packages:
 
 ```bash
 git clone https://github.com/prayagpadwal/ask-my-pdf.git
 cd ask-my-pdf
-```
-
-Install the required dependencies:
-
-```bash
 pip install -r requirements.txt
 ```
 
-### Usage
+### Dependencies
 
-To start the application, run:
+Ensure all required libraries are installed by running:
+
+```bash
+pip install streamlit textract transformers langchain faiss-cpu openai
+```
+
+Note: `FAISS` requires a CPU or GPU installation depending on your system capabilities; the above command installs `FAISS` for CPU.
+
+### OpenAI API Key
+
+The application uses OpenAI's GPT-3.5, which is a paid service. You will need to [sign up for OpenAI](https://platform.openai.com/signup), set up billing, and obtain an API key. The costs will vary based on the number of tokens processed by your interactions with the app.
+
+## Usage
+
+To run the application:
 
 ```bash
 streamlit run app.py
 ```
 
-Navigate to `http://localhost:8501` in your web browser to start using the app. Upload a PDF file and begin asking questions about its content directly through the chat interface.
+Visit `http://localhost:8501` in your browser to interact with the application. Upload a PDF and start asking questions about its content directly through the chat interface.
 
 ## Contributing
 
-Contributions to "Ask my PDF" are welcome! Whether it's bug fixes, feature requests, or improvements to the documentation, please feel free to make a pull request or open an issue.
+We welcome contributions to improve the app, whether it's new features, bug fixes, or documentation. Please feel free to fork the repository, make changes, and submit a pull request.
