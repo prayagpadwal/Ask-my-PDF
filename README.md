@@ -9,6 +9,7 @@
 - **Session State Management**: Maintains chat continuity, providing a seamless conversational experience with the document.
 
 ![snippet](https://github.com/user-attachments/assets/e429cd24-a256-467f-b088-7aa2a8d8e88e)
+![Flow char drawio](https://github.com/user-attachments/assets/6ae8d33c-325a-4dba-b9cc-1075b2e1e14e)
 
 
 ## Technology Stack
