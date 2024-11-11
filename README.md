@@ -50,7 +50,7 @@ Note: `FAISS` requires a CPU or GPU installation depending on your system capabi
 
 ### OpenAI API Key
 
-The application uses OpenAI's GPT-3.5, which is a paid service. You will need to [sign up for OpenAI](https://platform.openai.com/signup), set up billing, and obtain an API key. The costs will vary based on the number of tokens processed by your interactions with the app.
+The application uses OpenAI, which is a paid service. You will need to [sign up for OpenAI](https://platform.openai.com/signup), set up billing, and obtain an API key. The costs will vary based on the number of tokens processed by your interactions with the app.
 
 ## Usage
 
