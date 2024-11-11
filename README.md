@@ -1,4 +1,5 @@
 # Welcome to Ask my PDF!
+![snippet](https://github.com/user-attachments/assets/8a17b8bb-e5a2-4015-af10-7c18adc75c00)
 
 ### Transforming PDFs into Conversations with Streamlit
 
