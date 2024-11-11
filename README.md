@@ -30,7 +30,7 @@ Before you can run "Ask my PDF", ensure you have the following installed:
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/ask-my-pdf.git
+git clone https://github.com/prayagpadwal/ask-my-pdf.git
 cd ask-my-pdf
 ```
 
